@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Formulario de pagos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+
+  <div class="container p-0">
+    <div class="card px-4">
+      <div class="logo">
+        <img src="./images/MOTIVEX.png" alt="" width="48px" height="48px">
+          <p class="h8 py-3">Payment Details</p>
+      </div>
+        <div class="row gx-3">
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Person Name</p>
+                    <input class="form-control mb-3" type="text" placeholder="Alex Montoya" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Card Number</p>
+                    <div class="input-card">
+                      <input class="form-control mb-3 t1" type="text" placeholder="1234 5678 435678" required>
+                      <img src="./images/credit-card.svg" alt="Credit Card" width="14px" height="14px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Expiration date</p>
+                    <input class="form-control mb-3 pt-1" type="tel" placeholder="MM/YY" minlength="5" maxlength="5" pattern="/{5}/" required>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="col-6"> -->
+                <div class="d-flex2 flex-column">
+                    <p class="text mb-1">CVV/CVC</p>
+                    <div class="card-info">
+                      <input class="form-control mb-3 pt-2 " type="tel" placeholder="***" maxlength="3" required>
+                      <img src="./images/info.svg" alt="Info" width="14" height="14">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                  <p class="text mb-1">Address</p>
+                  <input class="form-control mb-3" type="text" placeholder="Av.morelos #123" required>
+              </div>
+          </div>
+            <div class="column-12">
+                <div class="btn btn-primary mb-3">
+                    <span class="ps-3">Confirmar pago</span>
+                </div>
+                <span class="notice">Verify that this information is correct</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
